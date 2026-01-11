@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab 1: HTML Basics - IIIT Bhagalpur</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body class="bg-slate-50 font-sans text-slate-900 flex flex-col min-h-screen">
+
+    <!-- Header -->
+    <header class="bg-white border-b border-slate-200 sticky top-0 z-50">
+        <div class="max-w-5xl mx-auto px-4 h-16 flex items-center justify-between">
+            <div class="flex items-center gap-4">
+                <a href="index.html" class="text-slate-500 hover:text-blue-600 transition-colors flex items-center gap-2 text-sm font-medium">
+                    <i class="fas fa-arrow-left"></i> Back to Portal
+                </a>
+                <div class="h-6 w-px bg-slate-200"></div>
+                <h1 class="font-bold text-lg text-slate-800">Lab 01: HTML Basics</h1>
+            </div>
+            <div class="text-sm text-slate-500 hidden sm:block">
+                Web Development Lab
+            </div>
+        </div>
+    </header>
+
+    <!-- Content -->
+    <main class="flex-grow container mx-auto px-4 py-8 max-w-4xl">
+        
+        <!-- Lab Intro -->
+        <div class="mb-10">
+            <h2 class="text-3xl font-bold text-slate-900 mb-4">Introduction to HTML</h2>
+            <p class="text-slate-600 leading-relaxed">
+                In this lab, you will learn the fundamental building blocks of the web. 
+                Focus on understanding semantic structure and proper nesting of elements.
+            </p>
+        </div>
+
+        <!-- Question 1 -->
+        <div class="bg-white rounded-xl shadow-sm border border-slate-200 p-6 mb-6">
+            <div class="flex items-center gap-3 mb-4">
+                <span class="bg-blue-100 text-blue-700 text-xs font-bold px-3 py-1 rounded-full">Q1</span>
+                <h3 class="text-lg font-bold text-slate-800">Create a Personal Bio</h3>
+            </div>
+            <div class="prose prose-slate max-w-none text-slate-600">
+                <p>Create an HTML page named <code>bio.html</code>. It should include:</p>
+                <ul class="list-disc pl-5 space-y-1 mt-2 mb-4">
+                    <li>A main heading with your name.</li>
+                    <li>A paragraph describing your hobbies.</li>
+                    <li>An unordered list of your favorite movies/books.</li>
+                    <li>A profile image (use a placeholder if needed).</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Question 2 -->
+        <div class="bg-white rounded-xl shadow-sm border border-slate-200 p-6 mb-6">
+            <div class="flex items-center gap-3 mb-4">
+                <span class="bg-blue-100 text-blue-700 text-xs font-bold px-3 py-1 rounded-full">Q2</span>
+                <h3 class="text-lg font-bold text-slate-800">Registration Form</h3>
+            </div>
+            <div class="prose prose-slate max-w-none text-slate-600">
+                <p>Design a student registration form using the <code>&lt;form&gt;</code> tag. The form must capture:</p>
+                <ul class="list-disc pl-5 space-y-1 mt-2 mb-4">
+                    <li>Full Name (Text input)</li>
+                    <li>Email Address (Email input)</li>
+                    <li>Date of Birth (Date picker)</li>
+                    <li>Course Selection (Dropdown menu)</li>
+                    <li>Gender (Radio buttons)</li>
+                </ul>
+            </div>
+            <!-- Code Snippet Example -->
+            <div class="mt-4 bg-slate-900 rounded-lg p-4 font-mono text-sm text-blue-50 overflow-x-auto">
+<pre>&lt;!-- Expected Structure --&gt;
+&lt;form action="/submit" method="POST"&gt;
+  &lt;label for="fullname"&gt;Name:&lt;/label&gt;
+  &lt;input type="text" id="fullname" name="fullname" required&gt;
+  ...
+&lt;/form&gt;</pre>
+            </div>
+        </div>
+
+        <!-- Question 3 -->
+        <div class="bg-white rounded-xl shadow-sm border border-slate-200 p-6 mb-6">
+            <div class="flex items-center gap-3 mb-4">
+                <span class="bg-blue-100 text-blue-700 text-xs font-bold px-3 py-1 rounded-full">Q3</span>
+                <h3 class="text-lg font-bold text-slate-800">Semantic Layout</h3>
+            </div>
+            <div class="prose prose-slate max-w-none text-slate-600">
+                <p>Refactor the provided code snippet to use semantic HTML5 tags instead of generic <code>&lt;div&gt;</code> tags.</p>
+                <p class="mt-2">Replace divs with <code>&lt;header&gt;</code>, <code>&lt;nav&gt;</code>, <code>&lt;main&gt;</code>, <code>&lt;article&gt;</code>, and <code>&lt;footer&gt;</code> where appropriate.</p>
+            </div>
+        </div>
+
+    </main>
+
+</body>
+</html>
